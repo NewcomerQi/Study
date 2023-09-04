@@ -1,4 +1,6 @@
 # Makefile 版本1，初始版本
+# ALL指定终极目标
+# ALL:main
 # # 生成main，";" 左边为目标，右边为依赖项
 # main:add_int.o sub_int.o mul_int.o div_int.o main.o
 # 	gcc -o main add/add_int.o sub/sub_int.o \
