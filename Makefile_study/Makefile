@@ -113,7 +113,7 @@ DIRS = add sub mul div .
 FILES = ${foreach dir, ${DIRS}, ${wildcard ${dir}/*.c}}
 OBJS = ${patsubst %.c,%.o,${FILES}}
 ${TARGET}:${OBJS}
-	${CC} -o ${TARGET} ${OBJS}
+	${CC} -o $@ ${OBJS}
 clean:
 	${RM} ${TARGET}
 	${RM} ${OBJS}
